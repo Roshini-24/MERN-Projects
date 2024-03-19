@@ -1,0 +1,39 @@
+div {
+    height: 100px;
+    width: 100px;
+    border:10px;
+    border-color: black;
+    background-color: blue;
+    max-width: 100px;
+    max-height: 100px;
+    overflow: auto;
+}
+
+#new{
+    
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.pos {
+    border: 5px;
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+
+}
+
+#box2 {
+    background-color: yellow;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+#box3 {
+    background-color: yellow;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+} 
