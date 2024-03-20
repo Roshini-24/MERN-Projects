@@ -16,7 +16,9 @@ flex-items
 order-------for ordering the items
 flex-grow------default 0 and takes the remaining spaces if applied on items
 flex-shrink------default is 1 and shrinks the item faster than others
-
+flex-basis-------same as to set the width of any items and becomes responsive if data inside becomes more at any point.
+flex------short hand for all 4 properties
+align-self----------only one item property can be changed and others stay same 
 
 
 
