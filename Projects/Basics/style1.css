@@ -1,0 +1,32 @@
+h1 {
+    color: darkblue;
+}
+/*
+flex-container
+display:flex;
+
+flex-direction------row,column,reverse
+flex-wrap-----------if size decreses going to the next line
+flexflow ---------shorthand for both
+justify-content----------for x axis or main axis
+align-items-----------for cross axis
+align content---------spacing between the items in cross axis
+
+flex-items
+order-------for ordering the items
+flex-grow------default 0 and takes the remaining spaces if applied on items
+flex-shrink------default is 1 and shrinks the item faster than others
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
