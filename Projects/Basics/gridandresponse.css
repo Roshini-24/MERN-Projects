@@ -61,3 +61,36 @@
     grid-area: ft;
 }
 
+/* advanced grids
+   fr unit ---fraction unit------1fr 1fr 1fr----creates similar size rows or columns
+   repeat function--------repeat(3,1fr)---repeat 1fr 3 times
+   grid-auto-rows:minmax() ------umknown count of rows ex:insta
+   grid-auto-columns:------unknow no of colums*/
+
+.container2{
+    height: 500px;
+    border:2px solid blue;
+    background-color: yellow;
+    display:grid;
+    gap: 10px;
+    grid-auto-rows: minmax(100px,auto);
+    grid-auto-columns: auto;
+   }
+
+.boxes{
+    border:2px solid blue;
+    background-color: red;
+   
+}
+
+/* properties-
+            justify-content----x axis 
+            align-content----y axis
+            justify-items-----item inside the grid on x axis
+            align-items-----item inside the grid on y axis
+            justify-self----x axis size of the content on child
+            align-self-----y axis size of the content on child
+            place-content----shorthand
+            place-items----shorthand
+            place-self---sorthand
+             */

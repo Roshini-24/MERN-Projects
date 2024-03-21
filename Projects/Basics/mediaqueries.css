@@ -1,0 +1,28 @@
+.container{
+    height: 500px;
+    border:2px solid blue;
+    background-color: yellow;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box{
+    border:2px solid blue;
+    background-color: red;
+    
+}
+
+@media(max-width:400px){
+    .container{
+        gap:20px;
+    }
+}
+
+@media(min-width:400px) and (max-width:500px) {
+    .container{
+        gap:20px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
+    }
+}
