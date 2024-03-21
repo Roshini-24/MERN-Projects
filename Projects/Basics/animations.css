@@ -1,0 +1,48 @@
+/* variables---var() 
+local inside any particular scope and global in the root and *
+
+
+--something:anything;
+var(--something)
+
+
+*/
+:root{
+    --something:#8f169a;
+    --some:#123456;
+}
+
+*{
+    background: var(--some);
+}
+
+h1 {
+    color: var(--something);
+    height: 50px;
+    background-color: aliceblue;
+    transition: background-color 4s ease 2s ;
+}
+
+h1:hover{
+    background-color: aqua;
+}
+
+/* transitions------timing-function,duration,delay,property
+
+transition:property-name duration timing-function delay; 
+
+*/
+
+/* animations and keyframes
+@keyframes
+animation-name----anything
+animation-duration
+animation-delay
+animation-iteration-count-----numbers
+animation-direction----reverse,forward,alternate-cycles
+animation-timing-function
+animation-fill-mode----style of element stops till in the last state or comes back to the initail state,none,forwards,backwards,both
+animation-----name duration function delay count direction
+
+To show start and end state we use keyframes(@keyframes animation-name{  from{}  to{}  }
+*/
