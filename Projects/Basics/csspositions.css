@@ -1,0 +1,14 @@
+/* static(takes complete line)
+Default value. Elements render in order, as they appear in the document flow
+
+absolute(can layer upon next element)(window)
+The element is positioned relative to its first positioned (not static) ancestor element	
+
+relative(moves acoording top,bottom etc...)	
+The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position	
+
+fixed(works like absolute but fixes to the screen and doesnot move for scrolling)
+The element is positioned relative to the browser window	
+
+sticky	
+The element is positioned based on the user's scroll position */
