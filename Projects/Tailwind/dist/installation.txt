@@ -1,0 +1,8 @@
+<!--
+    config file----mention the directory where the main files are present
+
+    npx tailwindcss -i ./src/input.css    -o ./dist/main.css            --watch
+                   { input main file            {output file which we       {automatic rebuilding}
+                        where @tailwind         will link to the main
+                        is written  }            html file}
+-->

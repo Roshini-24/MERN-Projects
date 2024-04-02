@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind</title>
+    <title>Razor pay</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body class="bg-red-500">
-<!--
-    config file----mention the directory where the main files are present
+<body>
+        <nav class="bg-deepBlue"> 
+            <div class="relative w-[1080px] mx-auto flex items-center justify-between">
+                <a href="/" class="cursor-pointer py-7 pr-7">
+                    <img
+                    src="Images/logo.svg"
+                    width="125px"
+                    height="30px"/>
+                </a>
+            </div>
 
-    npx tailwindcss -i ./src/input.css    -o ./dist/main.css            --watch
-                   { input main file            {output file which we       {automatic rebuilding}
-                        where @tailwind         will link to the main
-                        is written  }            html file}
--->
-    <h1 class="bg-slate-500 self-center m-14 p-14"> hello</h1>
+        </nav>
+
 </body>
 </html>
