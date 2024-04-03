@@ -694,6 +694,11 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -736,6 +741,10 @@ video {
 
 .mt-14 {
   margin-top: 3.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .inline-block {
@@ -902,6 +911,10 @@ video {
   max-width: 600px;
 }
 
+.max-w-\[450px\] {
+  max-width: 450px;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -981,6 +994,14 @@ video {
   gap: 3rem;
 }
 
+.gap-\[2rem\] {
+  gap: 2rem;
+}
+
+.gap-\[3rem\] {
+  gap: 3rem;
+}
+
 .gap-y-6 {
   row-gap: 1.5rem;
 }
@@ -1048,6 +1069,14 @@ video {
   border-radius: 9999px;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1060,6 +1089,16 @@ video {
 .border-slate-700 {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+
+.border-slate-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-border-opacity));
+}
+
+.border-slate-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
 }
 
 .bg-deepBlue {
@@ -1114,8 +1153,20 @@ video {
   background-image: url(./Images/instant-settlement-bg.svg);
 }
 
+.bg-\[url\(\/Images\/core-features-sectionBg\.svg\)\] {
+  background-image: url(/Images/core-features-sectionBg.svg);
+}
+
+.bg-\[url\(\.\/Images\/core-features-sectionBg\.svg\)\] {
+  background-image: url(./Images/core-features-sectionBg.svg);
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1145,6 +1196,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-4 {
@@ -1195,6 +1250,16 @@ video {
 .px-\[14px\] {
   padding-left: 14px;
   padding-right: 14px;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.py-\[12rem\] {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .pr-7 {
@@ -1346,6 +1411,10 @@ video {
   opacity: 0.7;
 }
 
+.opacity-80 {
+  opacity: 0.8;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1467,6 +1536,10 @@ video {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
