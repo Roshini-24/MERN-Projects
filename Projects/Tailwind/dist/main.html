@@ -195,13 +195,23 @@
                     <!-- for button and hyperlink-->
                     <div class="flex flex-col-reverse md:flex-row items-center space-x-4 ">
                         <button
-                        class="bg-lightBlue w-full md:w-fit text-white py-[14px] px-[18px] rounded-md
-                        font-mullish font-bold hover:bg-lightBlue500 translate-all duration-200 "
-                        >Sign Up Now</button>
+                        class="bg-lightBlue w-full flex flex-row md:w-fit text-white py-[14px] px-[14px] rounded-md
+                        font-mullish text-center font-bold hover:bg-lightBlue500 translate-all duration-200 "
+                        >Sign Up Now
+                        <svg
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            class="w-[14px] h-[14px] m-auto ml-2">
+                            <path
+                                fill="currentColor"
+                                d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                            ></path>
+                            </svg>
+                        </button>
                         <!--hyperlink-->
-                        <div class="flex self-start md:items-center cursor-pointer group">
+                        <div class="flex w-[110px] h-[48px] items-center cursor-pointer group ">
                             <a href="#" 
-                            class="font-mullish font-bold text-lightBlue500 
+                            class="font-mullish font-bold w-[95px] text-lightBlue500 
                             group-hover:text-grayBlue transition-all duration-200"
                             >Know More</a>
                             <i
