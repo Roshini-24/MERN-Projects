@@ -614,6 +614,18 @@ video {
   top: 150px;
 }
 
+.-right-\[3\.5rem\] {
+  right: -3.5rem;
+}
+
+.-top-\[6rem\] {
+  top: -6rem;
+}
+
+.left-\[300px\] {
+  left: 300px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -644,6 +656,14 @@ video {
 
 .z-\[90\] {
   z-index: 90;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .m-3 {
@@ -778,6 +798,14 @@ video {
   height: 60px;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.max-h-\[300px\] {
+  max-height: 300px;
+}
+
 .min-h-\[15rem\] {
   min-height: 15rem;
 }
@@ -852,6 +880,10 @@ video {
 
 .w-\[20px\] {
   width: 20px;
+}
+
+.w-\[233px\] {
+  width: 233px;
 }
 
 .max-w-\[1080px\] {
@@ -953,6 +985,15 @@ video {
   row-gap: 1.5rem;
 }
 
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -1048,6 +1089,14 @@ video {
 
 .bg-\[url\(\.\/Images\/feature-section-2BG\.svg\)\] {
   background-image: url(./Images/feature-section-2BG.svg);
+}
+
+.bg-\[url\(\/Images\/instant-settlement-bg\.svg\)\] {
+  background-image: url(/Images/instant-settlement-bg.svg);
+}
+
+.bg-\[url\(\.\/Images\/instant-settlement-bg\.svg\)\] {
+  background-image: url(./Images/instant-settlement-bg.svg);
 }
 
 .bg-cover {
@@ -1205,6 +1254,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1223,6 +1282,14 @@ video {
 
 .leading-10 {
   line-height: 2.5rem;
+}
+
+.leading-\[3\.375rem\] {
+  line-height: 3.375rem;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .text-lightBlue300 {
@@ -1274,9 +1341,23 @@ video {
   transition-duration: 200ms;
 }
 
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-lightBlue500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(11 114 231 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[url\(\/Images\/instant-settlement-bghover\.svg\)\]:hover {
+  background-image: url(/Images/instant-settlement-bghover.svg);
+}
+
+.hover\:bg-\[url\(\.\/Images\/instant-settlement-bghover\.svg\)\]:hover {
+  background-image: url(./Images/instant-settlement-bghover.svg);
 }
 
 .hover\:text-lightBlue:hover {
