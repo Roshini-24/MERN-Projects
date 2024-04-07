@@ -1767,6 +1767,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
