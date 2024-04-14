@@ -1,6 +1,7 @@
 const boxes = document.querySelectorAll(".box");
 const gameInfo = document.querySelector(".game-info");
 const newGameBtn = document.querySelector(".btn");
+console.log(boxes);
 
 
 let currentPlayer;
@@ -21,12 +22,12 @@ const winningPositions = [
 function initGame() {
     currentPlayer = "X";
     gameGrid = ["","","","","","","","",""];
-    //UI pr empty bhi karna padega boxes ko
+    //each display box to empty
     boxes.forEach((box, index) => {
         box.innerText = "";
         boxes[index].style.pointerEvents = "all";
-        //one more thing is missing, initialise box with css properties again
-        box.classList = `box box${index+1}`;
+        box.classList.remove("win");
+        box.classList.remove("tie");
     });
     newGameBtn.classList.remove("active");
     gameInfo.innerText = `Current Player - ${currentPlayer}`;
@@ -41,7 +42,7 @@ function swapTurn() {
     else {
         currentPlayer = "X";
     }
-    //UI Update
+    //winner display
     gameInfo.innerText = `Current Player - ${currentPlayer}`;
 }
 
@@ -49,11 +50,11 @@ function checkGameOver() {
     let answer = "";
 
     winningPositions.forEach((position) => {
-        //all 3 boxes should be non-empty and exactly same in value
+        //in a row,col,diagonl all should have same values
         if( (gameGrid[position[0]] !== "" || gameGrid[position[1]] !== "" || gameGrid[position[2]] !== "") 
             && (gameGrid[position[0]] === gameGrid[position[1]] ) && (gameGrid[position[1]] === gameGrid[position[2]])) {
 
-                //check if winner is X
+                //check the winner
                 if(gameGrid[position[0]] === "X") 
                     answer = "X";
                 else {
@@ -61,35 +62,37 @@ function checkGameOver() {
                 } 
                     
 
-                //disable pointer events
+                //after getting the event stop the next player
                 boxes.forEach((box) => {
                     box.style.pointerEvents = "none";
                 })
 
-                //now we know X/O is a winner
+                //add "win" class to the won player boxes
                 boxes[position[0]].classList.add("win");
                 boxes[position[1]].classList.add("win");
                 boxes[position[2]].classList.add("win");
             }
     });
 
-    //it means we have a winner
+    //winner displayed on top and newgame button is visible
     if(answer !== "" ) {
         gameInfo.innerText = `Winner Player - ${answer}`;
         newGameBtn.classList.add("active");
         return;
     }
 
-    //We know, NO Winner Found, let's check whether there is tie
+    //if all boxes are filled then its a tie
     let fillCount = 0;
     gameGrid.forEach((box) => {
         if(box !== "" )
             fillCount++;
     });
 
-    //board is Filled, game is TIE
+    //count is 9 then display tie and newgame button
     if(fillCount === 9) {
         gameInfo.innerText = "Game Tied !";
+        //change all the boxes to red color
+        boxes.forEach(element => element.classList.add("tie"));
         newGameBtn.classList.add("active");
     }
 
@@ -100,9 +103,7 @@ function handleClick(index) {
         boxes[index].innerText = currentPlayer;
         gameGrid[index] = currentPlayer;
         boxes[index].style.pointerEvents = "none";
-        //swap karo turn ko
         swapTurn();
-        //check koi jeet toh nahi gya
         checkGameOver();
     }
 }
